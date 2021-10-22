@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionTreatmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/TreatmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionTreatmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionTreatmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/TreatmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/TreatmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" afterDir="false" />
-    </list>
+    <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +88,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cosmeticsSB$Application.ic" NAME="Application Coverage Results" MODIFIED="1634927073816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/cosmeticsSB$Application.ic" NAME="Application Coverage Results" MODIFIED="1634928266170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cosmetics.backend.springboot.*</FILTER>
     </SUITE>
   </component>
