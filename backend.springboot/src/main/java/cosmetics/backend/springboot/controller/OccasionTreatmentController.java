@@ -4,6 +4,9 @@ import cosmetics.backend.springboot.model.*;
 import cosmetics.backend.springboot.repository.OccasionRepository;
 import cosmetics.backend.springboot.repository.OccasionTreatmentRepository;
 import cosmetics.backend.springboot.repository.TreatmentRepository;
+import cosmetics.backend.springboot.service.OccasionService;
+import cosmetics.backend.springboot.service.OccasionTreatmentService;
+import cosmetics.backend.springboot.service.TreatmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,32 +17,20 @@ import java.util.List;
 @RestController
 @RequestMapping("api/")
 public class OccasionTreatmentController {
+    private OccasionTreatmentService occasionTreatmentService;
 
     @Autowired
-    private OccasionTreatmentRepository occasionTreatmentRepository;
-
-    @Autowired
-    private OccasionRepository occasionRepository;
-
-    @Autowired
-    private TreatmentRepository treatmentRepository;
+    public OccasionTreatmentController(OccasionTreatmentService occasionTreatmentService) {
+        this.occasionTreatmentService = occasionTreatmentService;
+    }
 
     @GetMapping("occasiontreatments")
     private List<OccasionTreatment> getOccasionTreatments() {
-        return this.occasionTreatmentRepository.findAll();
+        return this.occasionTreatmentService.getOccasionTreatments();
     }
 
     @PostMapping("occasionstreatment/{occasionId}/{treatmentId}")
     public OccasionTreatment addOccasionTreatment(@PathVariable Long occasionId, @PathVariable Long treatmentId){
-        Occasion occ = occasionRepository.findById(occasionId).orElseThrow(
-                ()-> new RuntimeException("Could not found occasion with the given ID"));
-        Treatment treatment = treatmentRepository.findById(treatmentId).orElseThrow(
-                ()-> new RuntimeException("Could not found treatment with the given ID"));
-
-        OccasionTreatment occtreat = new OccasionTreatment();
-        occtreat.setOccasion(occ);
-        occtreat.setTreatment(treatment);
-
-        return occasionTreatmentRepository.save(occtreat);
+        return this.occasionTreatmentService.addOccasionTreatment(occasionId, treatmentId);
     }
 }

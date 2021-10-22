@@ -2,6 +2,7 @@ package cosmetics.backend.springboot.controller;
 
 import cosmetics.backend.springboot.model.User;
 import cosmetics.backend.springboot.repository.UserRepository;
+import cosmetics.backend.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,10 +15,13 @@ import java.util.List;
 @RestController
 @RequestMapping("api/")
 public class UserController {
+    private UserService userService;
 
     @Autowired
-    private UserRepository userRepository;
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @GetMapping("users")
-    public List<User> getUsers() { return this.userRepository.findAll(); }
+    public List<User> getUsers() { return this.userService.getUsers(); }
 }
