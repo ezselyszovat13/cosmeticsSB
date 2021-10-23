@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { TreatmentComponent } from './treatment/treatment.component';
 import { OccasionComponent } from './occasion/occasion.component';
+import { OccasionTreatmentComponent } from './occasiontreatment/occasiontreatment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     TreatmentComponent,
-    OccasionComponent
+    OccasionComponent,
+    OccasionTreatmentComponent
   ],
   imports: [
     BrowserModule,

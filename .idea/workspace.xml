@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-frontend/src/app/occasion/occasion.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionTreatmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionTreatmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/OccasionTreatmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/OccasionTreatmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionTreatmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionTreatmentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

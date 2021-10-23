@@ -6,6 +6,10 @@
                     <h1>{{occasion.id}} {{occasion.user.lastName}} {{occasion.user.firstName}}</h1>
                 </div>
                 <div class="card-body">
+                    <p>Alkalmazott kezelések: </p>
+                    <ul *ngFor="let treatment of occasion.treatments">
+                        <li>{{treatment.name}}</li>
+                    </ul>
                     <p>Státusz:
                         <span [ngSwitch]="occasion.status">
                             <span *ngSwitchCase="'DONE'">KÉSZ</span>

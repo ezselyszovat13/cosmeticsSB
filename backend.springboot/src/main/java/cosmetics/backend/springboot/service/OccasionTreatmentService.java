@@ -31,6 +31,10 @@ public class OccasionTreatmentService {
         return this.occasionTreatmentRepository.findAll();
     }
 
+    public List<Treatment> getTreatmentsOfOccsaion(Long id) {
+        return this.occasionTreatmentRepository.findTreatmentsOfOccasion(id);
+    }
+
     public OccasionTreatment addOccasionTreatment(Long occasionId, Long treatmentId){
         Occasion occ = occasionRepository.findById(occasionId).orElseThrow(
                 ()-> new RuntimeException("Could not found occasion with the given ID"));

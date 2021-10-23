@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Treatment } from '../treatment/treatment';
 import { Occasion } from './occasion';
 import { OccasionService } from './occasion.service';
 import { Status } from './status';
@@ -16,6 +17,11 @@ export class OccasionComponent implements OnInit {
   ngOnInit(): void {
     this.occasionService.getOccasions().subscribe((data: Occasion[]) => {
       this.occasions = data;
+      this.occasions.forEach(occasion => {
+        this.occasionService.getTreatmentsOfOccasion(occasion.id).subscribe((treatments: Treatment[]) => {
+          occasion.treatments = treatments;
+        });
+      });
     });
   }
 
