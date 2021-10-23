@@ -1,1 +1,84 @@
-<p>register works!</p>
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <h4 class="card-header text-center">Regisztráció</h4>
+
+                <div class="card-body">
+                    <form method="POST" action="">
+                        <!-- Vezetéknév -->
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-4 col-form-label text-md-right">Vezetéknév</label>
+
+                            <div class="col-md-6">
+                                <input id="firstname" type="text" class="form-control" name="name" autocomplete="firstname" required autofocus>
+                            </div>
+                        </div>
+
+                        <!-- Keresztnév -->
+                        <div class="form-group row mt-2">
+                            <label for="lastname" class="col-md-4 col-form-label text-md-right">Keresztnév</label>
+
+                            <div class="col-md-6">
+                                <input id="lastname" type="text" class="form-control" name="name" autocomplete="lastname" required autofocus>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="form-group row mt-2">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">E-mail cím</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" required autocomplete="email">
+                            </div>
+                        </div>
+                        
+                        <!-- Jelszó -->
+                        <div class="form-group row mt-2">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Jelszó</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <!-- Jelszó újra -->
+                        <div class="form-group row mt-2">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Jelszó újra</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirm" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <!-- Telefonszám -->
+                        <div class="form-group row mt-2">
+                            <label for="tel" class="col-md-4 col-form-label text-md-right">Telefonszám</label>
+
+                            <div class="col-md-6">
+                                <input id="tel" type="text" class="form-control" name="tel" required autocomplete="tel">
+                            </div>
+                        </div>
+
+                        <!-- Cím -->
+                        <div class="form-group row mt-2">
+                            <label for="address" class="col-md-4 col-form-label text-md-right">Cím</label>
+
+                            <div class="col-md-6">
+                                <input id="address" type="text" class="form-control" name="address" required autocomplete="address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0 mt-3">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-secondary">
+                                    Regisztráció
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
