@@ -29,7 +29,12 @@ public class OccasionTreatmentController {
         return this.occasionTreatmentService.getOccasionTreatments();
     }
 
-    @PostMapping("occasionstreatment/{occasionId}/{treatmentId}")
+    @GetMapping("occasiontreatments/{occasionId}")
+    private List<Treatment> getTreatmentsOfOccasion(@PathVariable Long occasionId) {
+        return this.occasionTreatmentService.getTreatmentsOfOccsaion(occasionId);
+    }
+
+    @PostMapping("occasiontreatments/{occasionId}/{treatmentId}")
     public OccasionTreatment addOccasionTreatment(@PathVariable Long occasionId, @PathVariable Long treatmentId){
         return this.occasionTreatmentService.addOccasionTreatment(occasionId, treatmentId);
     }

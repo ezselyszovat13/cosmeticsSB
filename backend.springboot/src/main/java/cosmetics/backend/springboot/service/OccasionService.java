@@ -29,7 +29,7 @@ public class OccasionService {
         User user = userRepository.findById(userId).orElseThrow(
                 ()-> new RuntimeException("Could not found occasion with the given ID"));
         occ.setUser(user);
-        occ.setStatus(Status.DONE);
+        occ.setStatus(Status.RESERVED);
         occ.setTimestamp(LocalDateTime.now());
         return occasionRepository.save(occ);
     }
