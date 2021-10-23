@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { OccasionTreatment } from '../occasiontreatment';
-import { OccasionTreatmentService } from '../occasiontreatment.service';
+import { OccasionTreatment } from './occasiontreatment';
+import { OccasionTreatmentService } from './occasiontreatment.service';
 
 @Component({
   selector: 'app-occasiontreatment',

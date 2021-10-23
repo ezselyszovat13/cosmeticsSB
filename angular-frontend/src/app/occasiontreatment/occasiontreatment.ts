@@ -1,5 +1,5 @@
-import { Occasion } from "./occasion/occasion";
-import { Treatment } from "./treatment/treatment";
+import { Occasion } from "../occasion/occasion";
+import { Treatment } from "../treatment/treatment";
 
 export class OccasionTreatment {
     id!: number;
