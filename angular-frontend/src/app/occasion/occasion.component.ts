@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Occasion } from '../occasion';
-import { OccasionService } from '../occasion.service';
-import { Status } from '../status';
+import { Occasion } from './occasion';
+import { OccasionService } from './occasion.service';
+import { Status } from './status';
 
 @Component({
   selector: 'app-occasion',
