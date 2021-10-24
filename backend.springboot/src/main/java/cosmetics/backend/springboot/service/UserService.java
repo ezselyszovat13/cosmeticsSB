@@ -17,4 +17,16 @@ public class UserService {
     }
 
     public List<User> getUsers() { return userRepository.findAll(); }
+
+    public User saveUser(User user){
+        return userRepository.save(user);
+    }
+
+    public User fetchUserByEmail(String email){
+        return userRepository.findByEmail(email);
+    }
+
+    public User fetchUserByEmailAndPassword(String email, String pw){
+        return userRepository.findByEmailAndPassword(email, pw);
+    }
 }
