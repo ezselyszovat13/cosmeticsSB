@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasiontreatment.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasiontreatment.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasiontreatment.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/occasiontreatment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -7,6 +7,8 @@ import { UserComponent } from './user/user.component';
 import { TreatmentComponent } from './treatment/treatment.component';
 import { OccasionComponent } from './occasion/occasion.component';
 import { OccasionTreatmentComponent } from './occasiontreatment/occasiontreatment.component';
+import { AuthModule } from './auth/auth.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { OccasionTreatmentComponent } from './occasiontreatment/occasiontreatmen
     UserComponent,
     TreatmentComponent,
     OccasionComponent,
-    OccasionTreatmentComponent
+    OccasionTreatmentComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

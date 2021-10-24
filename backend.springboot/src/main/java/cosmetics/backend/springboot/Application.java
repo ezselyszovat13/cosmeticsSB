@@ -39,9 +39,9 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		User user1 = this.userRepository.save(new User("Béla","Nagy","bela.nagy","belanagy@gmail.com","password","06202792722","9145 Jancsiföld, Kacsa utca 2."));
-		User user2 = this.userRepository.save(new User("Ferenc","Kiss","ferenc.kiss","ferenckiss@gmail.com","password","+36302792722","1015 Budapest, Ostrom utca 2."));
-		User user3 = this.userRepository.save(new User("József","Horváth","jozsef.horvath","jozsefhorvath@gmail.com","password","+36302794522","9021 Győr, Lajta út 22."));
+		User user1 = this.userRepository.save(new User("Béla","Nagy","belanagy@gmail.com","password","06202792722","9145 Jancsiföld, Kacsa utca 2."));
+		User user2 = this.userRepository.save(new User("Ferenc","Kiss","ferenckiss@gmail.com","password","+36302792722","1015 Budapest, Ostrom utca 2."));
+		User user3 = this.userRepository.save(new User("József","Horváth","jozsefhorvath@gmail.com","password","+36302794522","9021 Győr, Lajta út 22."));
 
 
 		Treatment treatment1 = this.treatmentRepository.save(new Treatment("Kiskezelés",30,1000));
