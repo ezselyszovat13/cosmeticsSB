@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionTreatmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/TreatmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Occasion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/OccasionTreatment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Status.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Treatment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/OccasionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/OccasionTreatmentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/TreatmentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionTreatmentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/TreatmentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/test/java/cosmetics/backend/springboot/ApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend.springbootold" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
