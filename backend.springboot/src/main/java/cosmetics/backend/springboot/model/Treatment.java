@@ -1,6 +1,9 @@
 package cosmetics.backend.springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -8,6 +11,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "treatments")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Treatment {
 
     @Id
@@ -18,44 +24,9 @@ public class Treatment {
     private int length;
     private int price;
 
-    public Treatment() {
-    }
-
     public Treatment(String name, int length, int price) {
         this.name = name;
         this.length = length;
-        this.price = price;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -72,8 +43,4 @@ public class Treatment {
     @JsonIgnore
     @OneToMany(mappedBy = "treatment")
     private Set<OccasionTreatment> occasionTreatments = new HashSet<>();
-
-    public Set<OccasionTreatment> getOccasionTreatments(){
-        return occasionTreatments;
-    }
 }

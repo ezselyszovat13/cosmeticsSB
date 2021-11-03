@@ -1,26 +1,20 @@
 package cosmetics.backend.springboot.controller;
 
 import cosmetics.backend.springboot.model.*;
-import cosmetics.backend.springboot.repository.OccasionRepository;
-import cosmetics.backend.springboot.repository.OccasionTreatmentRepository;
-import cosmetics.backend.springboot.repository.TreatmentRepository;
-import cosmetics.backend.springboot.service.OccasionService;
-import cosmetics.backend.springboot.service.OccasionTreatmentService;
-import cosmetics.backend.springboot.service.TreatmentService;
+import cosmetics.backend.springboot.service.OccasionTreatmentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("api/")
 public class OccasionTreatmentController {
-    private OccasionTreatmentService occasionTreatmentService;
+    private OccasionTreatmentServiceImpl occasionTreatmentService;
 
     @Autowired
-    public OccasionTreatmentController(OccasionTreatmentService occasionTreatmentService) {
+    public OccasionTreatmentController(OccasionTreatmentServiceImpl occasionTreatmentService) {
         this.occasionTreatmentService = occasionTreatmentService;
     }
 

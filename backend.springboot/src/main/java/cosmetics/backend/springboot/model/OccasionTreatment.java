@@ -1,9 +1,16 @@
 package cosmetics.backend.springboot.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "occasion_treatment")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class OccasionTreatment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,30 +23,6 @@ public class OccasionTreatment {
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "occasion_id", referencedColumnName = "id")
     private Occasion occasion;
-
-    public Long getId() {
-        return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
-    }
-
-    public Treatment getTreatment() {
-        return treatment;
-    }
-
-    public void setTreatment(Treatment treatment) {
-        this.treatment = treatment;
-    }
-
-    public Occasion getOccasion() {
-        return occasion;
-    }
-
-    public void setOccasion(Occasion occasion) {
-        this.occasion = occasion;
-    }
 
     @Override
     public String toString() {

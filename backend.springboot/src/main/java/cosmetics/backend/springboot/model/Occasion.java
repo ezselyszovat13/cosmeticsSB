@@ -1,6 +1,9 @@
 package cosmetics.backend.springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -9,6 +12,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "occasions")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Occasion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,38 +31,6 @@ public class Occasion {
     private Status status;
     private LocalDateTime timestamp;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(LocalDateTime timestamp) {
-        this.timestamp = timestamp;
-    }
-
     @Override
     public String toString() {
         return "Occasion{" +
@@ -70,8 +44,4 @@ public class Occasion {
     @JsonIgnore
     @OneToMany(mappedBy = "occasion")
     private Set<OccasionTreatment> occasionTreatments = new HashSet<>();
-
-    public Set<OccasionTreatment> getOccasionTreatments(){
-        return occasionTreatments;
-    }
 }

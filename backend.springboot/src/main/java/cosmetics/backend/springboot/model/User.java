@@ -1,6 +1,9 @@
 package cosmetics.backend.springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -8,6 +11,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "users")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,9 +27,6 @@ public class User {
     private String address;
     private boolean isAdmin;
 
-    public User() {
-    }
-
     public User(String firstName, String lastName, String email, String password, String tel, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -32,70 +35,6 @@ public class User {
         this.tel = tel;
         this.address = address;
         this.isAdmin = false;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public boolean isAdmin() {
-        return isAdmin;
-    }
-
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
     }
 
     @Override
@@ -116,7 +55,6 @@ public class User {
     @OneToMany(mappedBy = "user")
     private Set<Occasion> occasions = new HashSet<>();
 
-    public Set<Occasion> getOccasions(){
-        return occasions;
-    }
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
 }
