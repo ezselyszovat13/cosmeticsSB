@@ -6,9 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="9de97cd0-3d3c-41c8-b6ce-825cdb5b01d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/OccasionTreatmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/TreatmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Occasion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/OccasionTreatment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/Treatment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/OccasionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/OccasionTreatmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/TreatmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/OccasionTreatmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/TreatmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/java/cosmetics/backend/springboot/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.springboot/src/test/java/cosmetics/backend/springboot/ApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +48,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
