@@ -24,15 +24,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URI;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("api/")
+@RequestMapping("/")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -46,8 +43,14 @@ public class UserController {
     }
 
     @GetMapping("users/{userId}")
-    public ResponseEntity<User> getUser(@PathVariable("userId") Long userId) {
-        return ResponseEntity.ok(userService.getUserById(userId));
+    public ResponseEntity<?> getUser(@PathVariable("userId") Long userId) {
+        User user;
+        try{
+            user = userService.getUserById(userId);
+        } catch (IllegalStateException e){
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
+        }
+        return ResponseEntity.ok(user);
     }
 
     @GetMapping("roles")
@@ -56,24 +59,23 @@ public class UserController {
     }
 
     @PostMapping("users")
-    public ResponseEntity<User> saveUser(@RequestBody User user) throws Exception {
-        String tempEmail = user.getEmail();
-        if(tempEmail != null && !tempEmail.isEmpty()){
-            User userObj = userService.getUser(tempEmail);
-            if(userObj != null){
-                throw new Exception("A megadott e-mail cím már használatban van!");
-            }
+    public ResponseEntity<?> saveUser(@RequestBody User user) throws Exception {
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/users").toUriString());
+        try{
+            userService.saveUser(user);
         }
-        else{
-            throw new Exception("Az e-mail cím nem megfelelő!");
+        catch (IllegalStateException e){
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
         }
-        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/users").toUriString());
-        return ResponseEntity.created(uri).body(userService.saveUser(user));
+        catch (IllegalArgumentException e){
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
+        }
+        return ResponseEntity.created(uri).body(user);
     }
 
     @PostMapping("roles")
     public ResponseEntity<Role> saveRole(@RequestBody Role role){
-        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("/api/roles").toUriString());
+        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentContextPath().path("roles").toUriString());
         return ResponseEntity.created(uri).body(userService.saveRole(role));
     }
 
@@ -93,7 +95,7 @@ public class UserController {
                 JWTVerifier jwtVerifier = JWT.require(algorithm).build();
                 DecodedJWT decodedJWT = jwtVerifier.verify(refreshToken);
                 String email = decodedJWT.getSubject();
-                User user = userService.getUser(email);
+                User user = userService.getUserByEmail(email);
                 String accessToken = JWT.create().withSubject(email)
                         .withIssuer(request.getRequestURL().toString())
                         .withExpiresAt(new Date(System.currentTimeMillis() + 10*60*1000))

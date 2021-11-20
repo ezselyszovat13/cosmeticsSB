@@ -25,7 +25,6 @@ public class User {
     private String password;
     private String tel;
     private String address;
-    private boolean isAdmin;
 
     public User(String firstName, String lastName, String email, String password, String tel, String address) {
         this.firstName = firstName;
@@ -34,7 +33,6 @@ public class User {
         this.password = password;
         this.tel = tel;
         this.address = address;
-        this.isAdmin = false;
     }
 
     @Override
@@ -47,7 +45,6 @@ public class User {
                 ", password='" + password + '\'' +
                 ", tel='" + tel + '\'' +
                 ", address='" + address + '\'' +
-                ", isAdmin=" + isAdmin +
                 '}';
     }
 

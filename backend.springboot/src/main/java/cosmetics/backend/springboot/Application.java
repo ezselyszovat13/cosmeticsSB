@@ -28,18 +28,15 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		Role role1 = userService.saveRole(new Role(null,"ROLE_USER"));
+		Role role2 = userService.saveRole(new Role(null,"ROLE_ADMIN"));
+
 		User user1 = userService.saveUser(new User("Admin","Admin","admin@gmail.com","password","+36201111111","1015 Budapest, Admin utca 69."));
 		User user2 = userService.saveUser(new User("Ferenc","Kiss","ferenckiss@gmail.com","password","+36302792722","1015 Budapest, Ostrom utca 2."));
 		User user3 = userService.saveUser(new User("József","Horváth","jozsefhorvath@gmail.com","password","+36302794522","9021 Győr, Lajta út 22."));
 		User user4 = userService.saveUser(new User("Béla","Nagy","belanagy@gmail.com","password","06202792722","9145 Jancsiföld, Kacsa utca 2."));;
 
-		Role role1 = userService.saveRole(new Role(null,"ROLE_USER"));
-		Role role2 = userService.saveRole(new Role(null,"ROLE_ADMIN"));
-
 		userService.addRoleToUser("admin@gmail.com", "ROLE_ADMIN");
-		userService.addRoleToUser("ferenckiss@gmail.com", "ROLE_USER");
-		userService.addRoleToUser("jozsefhorvath@gmail.com", "ROLE_USER");
-		userService.addRoleToUser("belanagy@gmail.com", "ROLE_USER");
 
 		Treatment treatment1 = treatmentService.saveTreatment(new Treatment("Kiskezelés",30,1000));
 		Treatment treatment2 = treatmentService.saveTreatment(new Treatment("Nagykezelés",60,2000));
