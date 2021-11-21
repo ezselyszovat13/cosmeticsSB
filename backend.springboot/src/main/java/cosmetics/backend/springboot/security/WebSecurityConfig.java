@@ -36,12 +36,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         authenticationFilter.setFilterProcessesUrl("/login");
         http.csrf().disable();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
         http.authorizeRequests().antMatchers("/login/**").permitAll();
+
         http.authorizeRequests().antMatchers(HttpMethod.POST,"/users/**").permitAll();
         http.authorizeRequests().antMatchers(HttpMethod.GET, "/users").hasAuthority("ROLE_ADMIN");
         http.authorizeRequests().antMatchers(HttpMethod.GET, "/users/**").hasAuthority("ROLE_ADMIN");
+
         http.authorizeRequests().antMatchers( "/roles").hasAuthority("ROLE_ADMIN");
         http.authorizeRequests().antMatchers(HttpMethod.POST, "/roles/**").hasAuthority("ROLE_ADMIN");
+
+        http.authorizeRequests().antMatchers(HttpMethod.POST, "/treatments").hasAuthority("ROLE_ADMIN");
+
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/occasions").hasAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers("/occasions/occbyid/**").hasAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers("/occasions/acc/**").hasAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers("/occasions/dec/**").hasAuthority("ROLE_ADMIN");
+        http.authorizeRequests().antMatchers("/occasions/fin/**").hasAuthority("ROLE_ADMIN");
+
         http.authorizeRequests().anyRequest().authenticated();
         http.addFilter(authenticationFilter);
         http.addFilterBefore(new AuthorizationFilter(jwtSecret), UsernamePasswordAuthenticationFilter.class);

@@ -42,14 +42,15 @@ public class Application implements CommandLineRunner {
 		Treatment treatment2 = treatmentService.saveTreatment(new Treatment("Nagykezelés",60,2000));
 		Treatment treatment3 = treatmentService.saveTreatment(new Treatment("Szemöldökszedés",10, 500));
 
-		Occasion occ1 = occasionService.addOccasion(user1.getId());
+		Occasion occ1 = occasionService.reserveOccasion(user1.getId());
+		occasionService.declineOccasion(occ1.getId());
 		occasionTreatmentService.addOccasionTreatment(treatment1.getId(),occ1.getId());
 
-		Occasion occ2 = occasionService.addOccasion(user2.getId());
+		Occasion occ2 = occasionService.reserveOccasion(user2.getId());
 		occasionTreatmentService.addOccasionTreatment(treatment1.getId(),occ2.getId());
 		occasionTreatmentService.addOccasionTreatment(treatment2.getId(),occ2.getId());
 
-		Occasion occ3 = occasionService.addOccasion(user3.getId());
+		Occasion occ3 = occasionService.reserveOccasion(user3.getId());
 		occasionTreatmentService.addOccasionTreatment(treatment3.getId(),occ3.getId());
 	}
 }

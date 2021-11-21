@@ -8,7 +8,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public interface OccasionService {
-    List<Occasion> getOccasions();
-    Occasion addOccasion(Long userId);
-    Occasion getOccasion(Long occId);
+    List<Occasion> getAllOccasions();
+    //List<Occasion> getOccasionsOfUserById(Long userId);
+    Occasion reserveOccasion(Long userId);
+    Occasion getOccasionById(Long occId);
+    Occasion acceptOccasion(Long occasionId);
+    Occasion declineOccasion(Long occasionId);
+    Occasion finalizeOccasion(Long occasionId);
+
 }

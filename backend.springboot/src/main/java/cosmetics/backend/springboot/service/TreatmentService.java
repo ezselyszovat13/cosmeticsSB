@@ -8,5 +8,5 @@ import java.util.List;
 public interface TreatmentService {
     List<Treatment> getTreatments();
     Treatment saveTreatment(Treatment treatment);
-    Treatment getTreatment(Long id);
+    Treatment getTreatmentById(Long id);
 }

@@ -3,5 +3,5 @@ package cosmetics.backend.springboot.model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 public enum Status {
-    RESERVED, DONE, DECLINED
+    RESERVED, ACCEPTED, DONE, DECLINED
 }
