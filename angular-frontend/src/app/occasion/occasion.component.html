@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row card-group">
+        <div *ngFor="let occasion of occasions">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h1>{{occasion.id}} {{occasion.user.lastName}} {{occasion.user.firstName}}</h1>
+                </div>
+                <div class="card-body">
+                    <p>Alkalmazott kezelések: </p>
+                    <ul *ngFor="let treatment of occasion.treatments">
+                        <li>{{treatment.name}}</li>
+                    </ul>
+                    <p>Státusz:
+                        <span [ngSwitch]="occasion.status">
+                            <span *ngSwitchCase="'DONE'">KÉSZ</span>
+                            <span *ngSwitchCase="'RESERVED'">LEFOGLALVA</span>
+                            <span *ngSwitchCase="'DECLINED'">ELUTASÍTVA</span>
+                        </span>
+                    </p>
+                    <p>Időpont: {{occasion.timestamp | date:'y.M.d h:mm'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

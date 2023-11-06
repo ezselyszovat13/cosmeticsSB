@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row card-group">
+        <div *ngFor="let user of users">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h1>{{user.id}} {{user.lastName}} {{user.firstName}}</h1>
+                </div>
+                <div class="card-body">
+                    <p>Email: {{user.email}}</p>
+                    <p>Jelszó: {{user.password}}</p>
+                    <p>Telefonszám: {{user.tel}}</p>
+                    <p>Cím: {{user.address}}</p>
+                    <p>Admin: {{user.isAdmin ? 'Igen' : 'Nem'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
